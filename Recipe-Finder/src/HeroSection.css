@@ -1,0 +1,27 @@
+.hero {
+  width: 95%;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: -2px;
+  line-height: 110%;
+  position: relative;
+  color: #163a34;
+}
+
+h1 span {
+  position: relative;
+}
+.hero h1 span::after {
+  position: absolute;
+  height: 23px;
+  content: "";
+  width: 100%;
+  background-color: #fe9f6b;
+  left: 0;
+  bottom: 13px;
+  opacity: 0.4;
+  border-radius: 4px;
+  z-index: -10;
+}
