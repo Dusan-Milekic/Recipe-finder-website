@@ -6,8 +6,11 @@ import HeroSection from "./HeroSection";
 function App() {
   return (
     <>
-      <Header></Header>
-      <HeroSection></HeroSection>
+      <div className="wrapper">
+        <Header />
+      </div>
+
+      <HeroSection />
     </>
   );
 }

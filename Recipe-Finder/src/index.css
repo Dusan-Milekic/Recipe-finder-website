@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -13,15 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  background-image: url("src/assets/images/pattern-squiggle-1.svg");
+  background-repeat: repeat;
+  background-size: cover; /* ili cover */
+  background-position: center 30%;
+  background-color: #f6f5f1;
+}
 body {
   width: 100%;
 }
 a {
   text-decoration: none;
 }
-html {
-  background-image: url("src/assets/images/pattern-squiggle-1.svg");
-  background-repeat: repeat;
-  background-size: cover; /* ili cover */
-  background-position: center 30%;
+:root {
+  margin: 0;
 }

@@ -5,6 +5,7 @@ export default function Header() {
   let menu_boxRef = useRef(null);
 
   function onBurgerClick() {
+    if (!menu_boxRef) return;
     const el = menu_boxRef.current;
 
     el.style.display =

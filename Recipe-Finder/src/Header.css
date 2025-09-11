@@ -4,8 +4,6 @@ header {
   align-items: center;
   width: 90%;
   margin: 20px auto;
-  position: sticky; /* ili relative/fixed */
-  top: 0;
   z-index: 1000;
 }
 
@@ -62,7 +60,6 @@ header {
   width: 343px;
   padding: 10px;
   padding-top: 15px;
-  margin: 0 auto;
   box-shadow: 0px 0px 10px #b7b1b1;
   border-radius: 8px;
   position: absolute;
@@ -70,6 +67,8 @@ header {
   transform: translateX(-50%);
   z-index: 1001;
   display: none;
+  background-color: white;
+  bottom: -220px;
 }
 .menu-box button {
   padding: 12px 16px;
