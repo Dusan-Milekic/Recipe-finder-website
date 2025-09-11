@@ -2,9 +2,6 @@
   width: 90%;
   margin: 0 auto;
   margin-top: 48px;
-  position: relative;
-  top: 100px;
-  z-index: 0;
 }
 .hero h1 {
   font-size: 52px;
@@ -30,7 +27,7 @@ h1 span {
   opacity: 0.4;
   border-radius: 4px;
   z-index: 0;
-  transition: 1s ease-in-out all;
+  transition: 2s ease-in-out all;
 }
 
 p {
@@ -58,6 +55,7 @@ p {
   width: 100%;
   border-radius: 3.45px;
   border: 7px solid white;
+  height: fit-content;
 }
 
 #br2 {
@@ -65,10 +63,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    max-width: 1000px;
-    margin: 0px auto;
-  }
   #br1,
   #br2 {
     display: none;
@@ -76,10 +70,6 @@ p {
 }
 
 @media only screen and (min-width: 1440px) {
-  body {
-    max-width: 1600px;
-    margin: 0px auto;
-  }
   .hero h1 {
     text-align: center;
   }

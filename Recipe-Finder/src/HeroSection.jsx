@@ -31,7 +31,7 @@ export default function HeroSection() {
         </div>
 
         <img
-          src="src/assets/images/image-home-hero-small.webp"
+          src="src/assets/images/image-home-hero-large.webp"
           alt="hero image"
         />
       </div>
