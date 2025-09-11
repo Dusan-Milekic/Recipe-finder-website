@@ -1,6 +1,13 @@
+.hero,
+.hero h1 {
+  z-index: auto;
+} /* ili jednostavno ukloni pravila sa z-indexom */
+
 .hero {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
+  margin-top: 48px;
+  position: relative;
 }
 .hero h1 {
   font-size: 52px;
@@ -8,20 +15,84 @@
   line-height: 110%;
   position: relative;
   color: #163a34;
+  position: relative;
 }
 
 h1 span {
   position: relative;
+  display: inline-block;
 }
-.hero h1 span::after {
+#highlight {
   position: absolute;
   height: 23px;
   content: "";
-  width: 100%;
+  width: 0%;
   background-color: #fe9f6b;
   left: 0;
   bottom: 13px;
   opacity: 0.4;
   border-radius: 4px;
-  z-index: -10;
+  z-index: 0;
+  transition: 1s ease-in-out all;
+}
+
+p {
+  color: #395852;
+  letter-spacing: -0.4px;
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+.hero button {
+  padding: 16px 32px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #163a34;
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 3.45px;
+  border: 7px solid white;
+}
+
+#br2 {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  #br1,
+  #br2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    max-width: 1600px;
+    margin: 0px auto;
+  }
+  .hero h1 {
+    text-align: center;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  #br2 {
+    display: block;
+  }
 }

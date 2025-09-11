@@ -2,7 +2,7 @@ import "./Header.css";
 import { useRef } from "react";
 
 export default function Header() {
-  const menu_boxRef = useRef(null);
+  let menu_boxRef = useRef(null);
 
   function onBurgerClick() {
     const el = menu_boxRef.current;
@@ -27,6 +27,7 @@ export default function Header() {
           <button>Browse Recipes</button>
         </div>
       </header>
+
       <div className="menu-box" ref={menu_boxRef}>
         <ul>
           <li>

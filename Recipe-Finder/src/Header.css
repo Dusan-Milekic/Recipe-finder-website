@@ -2,9 +2,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 90%;
   margin: 20px auto;
-  position: relative;
+  position: sticky; /* ili relative/fixed */
+  top: 0;
+  z-index: 1000;
 }
 
 .menu {
@@ -65,8 +67,8 @@ header {
   border-radius: 8px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
-
+  transform: translateX(-50%);
+  z-index: 1001;
   display: none;
 }
 .menu-box button {
@@ -114,6 +116,9 @@ li a {
 
   .links {
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 90px;
   }
   .browse,
   .browse button {
