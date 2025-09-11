@@ -1,10 +1,21 @@
 import "./Header.css";
+import { useRef } from "react";
+
 export default function Header() {
+  const menu_boxRef = useRef(null);
+
+  function onBurgerClick() {
+    const el = menu_boxRef.current;
+
+    el.style.display =
+      !el.style.display || el.style.display === "none" ? "block" : "none";
+  }
+
   return (
     <>
       <header>
         <img src="/src/assets/images/logo.svg" rel="logo"></img>
-        <div className="menu">
+        <div className="menu" onClick={() => onBurgerClick()}>
           <img src="/src/assets/images/icon-hamburger-menu.svg" alt="menu" />
         </div>
         <div className="links">
@@ -16,6 +27,20 @@ export default function Header() {
           <button>Browse Recipes</button>
         </div>
       </header>
+      <div className="menu-box" ref={menu_boxRef}>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Recipes</a>
+          </li>
+        </ul>
+        <button>Browse recipes</button>
+      </div>
     </>
   );
 }
