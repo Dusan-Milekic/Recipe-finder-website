@@ -1,9 +1,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin: 16px;
-  padding-bottom: 20px;
   align-items: center;
+  width: 95%;
+  margin: 20px auto;
 }
 
 .menu {
@@ -14,10 +14,78 @@ header {
   border-radius: 4px;
 }
 
+.links {
+  display: none;
+  gap: 40px;
+}
+.links a {
+  color: #163a34;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.links a::after {
+  position: absolute;
+  height: 2px;
+  background-color: #fe9f6b;
+  width: 100%;
+  content: "";
+  bottom: -4px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.links a:hover::after {
+  opacity: 1;
+}
+
+.browse {
+  display: none;
+}
+.browse button {
+  padding: 13px;
+  background-color: #163a34;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  display: none;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
-    header {
-      margin: 32px;
-    }
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .links,
+  .browse {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    max-width: 1600px;
+    margin: 0px auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+  }
+  .browse,
+  .browse button {
+    display: block;
   }
 }
