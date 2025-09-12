@@ -5,6 +5,7 @@ import HeroSection from "./HeroSection";
 import FeatureSection from "./FeaturesSection";
 import RealLifeSection from "./RealLifeSection";
 import CallToAction from "./CallToAction";
+import Footer from "./Footer";
 function App() {
   return (
     <>
@@ -18,6 +19,9 @@ function App() {
 
         <CallToAction />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
