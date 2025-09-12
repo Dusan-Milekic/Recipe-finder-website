@@ -15,9 +15,9 @@ export default function Header() {
   return (
     <>
       <header>
-        <img src="/public/images/logo.svg" rel="logo"></img>
+        <img src="images/logo.svg" rel="logo"></img>
         <div className="menu" onClick={() => onBurgerClick()}>
-          <img src="/public/images/icon-hamburger-menu.svg" alt="menu" />
+          <img src="images/icon-hamburger-menu.svg" alt="menu" />
         </div>
         <div className="links">
           <a href="#">Home</a>

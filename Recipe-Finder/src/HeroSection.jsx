@@ -30,7 +30,7 @@ export default function HeroSection() {
           <button>Start exploring</button>
         </div>
 
-        <img src="/public/images/image-home-hero-large.webp" alt="hero image" />
+        <img src="images/image-home-hero-large.webp" alt="hero image" />
       </div>
     </>
   );

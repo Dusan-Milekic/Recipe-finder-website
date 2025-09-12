@@ -7,10 +7,7 @@ export default function FeatureSection() {
         <div className="flex">
           <div className="feature">
             <div className="img-holder">
-              <img
-                src="/public/images/icon-whole-food-recipes.svg"
-                alt="food"
-              />
+              <img src="images/icon-whole-food-recipes.svg" alt="food" />
             </div>
 
             <h3>Whole-food recipes</h3>
@@ -18,7 +15,7 @@ export default function FeatureSection() {
           </div>
           <div className="feature">
             <div className="img-holder">
-              <img src="/public/images/icon-minimum-fuss.svg" alt="fuss" />
+              <img src="images/icon-minimum-fuss.svg" alt="fuss" />
             </div>
 
             <h3>Minimum fuss</h3>
@@ -28,10 +25,7 @@ export default function FeatureSection() {
           </div>
           <div className="feature">
             <div className="img-holder">
-              <img
-                src="/public/images/icon-search-in-seconds.svg"
-                alt="search"
-              />
+              <img src="images/icon-search-in-seconds.svg" alt="search" />
             </div>
 
             <h3>Search in seconds</h3>
