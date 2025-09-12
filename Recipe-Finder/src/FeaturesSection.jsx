@@ -8,7 +8,7 @@ export default function FeatureSection() {
           <div className="feature">
             <div className="img-holder">
               <img
-                src="/src/assets/images/icon-whole-food-recipes.svg"
+                src="/public/images/icon-whole-food-recipes.svg"
                 alt="food"
               />
             </div>
@@ -18,7 +18,7 @@ export default function FeatureSection() {
           </div>
           <div className="feature">
             <div className="img-holder">
-              <img src="/src/assets/images/icon-minimum-fuss.svg" alt="fuss" />
+              <img src="/public/images/icon-minimum-fuss.svg" alt="fuss" />
             </div>
 
             <h3>Minimum fuss</h3>
@@ -29,7 +29,7 @@ export default function FeatureSection() {
           <div className="feature">
             <div className="img-holder">
               <img
-                src="/src/assets/images/icon-search-in-seconds.svg"
+                src="/public/images/icon-search-in-seconds.svg"
                 alt="search"
               />
             </div>

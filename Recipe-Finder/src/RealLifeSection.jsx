@@ -17,7 +17,7 @@ export default function RealLifeSection() {
         </div>
         <div className="img-holder">
           <img
-            src="src/assets/images/image-home-real-life-large.webp"
+            src="/public/images/image-home-real-life-large.webp"
             alt="reallife"
           />
         </div>
