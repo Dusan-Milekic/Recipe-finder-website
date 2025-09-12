@@ -1,5 +1,5 @@
 .hero {
-  width: 90%;
+  max-width: 375px;
   margin: 0 auto;
   margin-top: 48px;
 }
@@ -63,6 +63,9 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
   #br1,
   #br2 {
     display: none;
@@ -70,6 +73,9 @@ p {
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+  }
   .hero h1 {
     text-align: center;
   }

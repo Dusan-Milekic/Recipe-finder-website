@@ -14,32 +14,16 @@ main {
   top: 100px;
   z-index: 0;
   background-color: #f6f5f1;
+  padding: 0px 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    max-width: 1000px;
-    margin: 0px auto;
-  }
   .menu {
     display: flex;
+    justify-content: center;
   }
   .links,
   .browse {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  main {
-    max-width: 1000px;
-    margin: 0px auto;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  main {
-    max-width: 1600px;
-    margin: 0px auto;
   }
 }
