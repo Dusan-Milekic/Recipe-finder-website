@@ -4,6 +4,7 @@ import Header from "./Header";
 import HeroSection from "./HeroSection";
 import FeatureSection from "./FeaturesSection";
 import RealLifeSection from "./RealLifeSection";
+import CallToAction from "./CallToAction";
 function App() {
   return (
     <>
@@ -14,6 +15,8 @@ function App() {
         <HeroSection />
         <FeatureSection />
         <RealLifeSection />
+
+        <CallToAction />
       </main>
     </>
   );

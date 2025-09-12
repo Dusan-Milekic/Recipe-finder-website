@@ -1,0 +1,74 @@
+.call-to-action {
+  display: block;
+  background-color: #e9ede8;
+  padding: 0px 16px;
+  max-width: 375px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 64px 0px;
+}
+
+.call-to-action h2 {
+  max-width: 311px;
+  margin: 0 auto;
+}
+.call-to-action p {
+  max-width: 311px;
+  margin: 0 auto;
+}
+
+.call-to-action h2 {
+  font-weight: 800;
+  font-size: 48px;
+  letter-spacing: -2px;
+  line-height: 120%;
+  color: #163a34;
+  text-align: center;
+}
+.call-to-action p {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  color: #395852;
+  text-align: center;
+}
+.call-to-action button {
+  background-color: #163a34;
+  border-radius: 10px;
+  padding: 16px 24px;
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .call-to-action {
+    max-width: 768px;
+  }
+
+  .call-to-action h2 {
+    max-width: 704px;
+    margin: 0 auto;
+  }
+  .call-to-action p {
+    max-width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .call-to-action {
+    max-width: 1440px;
+    padding: 96px 0px;
+  }
+  .call-to-action h2 {
+    max-width: 1192px;
+    margin: 0 auto;
+  }
+  .call-to-action p {
+    max-width: 1192px;
+    margin: 0 auto;
+  }
+}

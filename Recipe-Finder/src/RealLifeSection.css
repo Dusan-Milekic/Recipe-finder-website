@@ -5,6 +5,8 @@
   max-width: 375px;
   margin: 0 auto;
   margin-top: 64px;
+  padding: 0px 16px;
+  padding-bottom: 86px;
 }
 .text {
   max-width: 343px;
@@ -49,7 +51,27 @@
   .real-life {
     max-width: 768px;
   }
+  .real-life .img-holder {
+    max-width: 704px;
+  }
   .text {
     max-width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .real-life {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+  }
+  .real-life .img-holder {
+    max-width: 635px;
+  }
+  .text {
+    max-width: 509px;
   }
 }
