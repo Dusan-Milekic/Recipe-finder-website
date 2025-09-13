@@ -1,0 +1,64 @@
+@tailwind components;
+
+@layer components {
+  .hero {
+    @apply max-w-[375px] my-0 mx-auto pt-12;
+  }
+
+  .hero h1 {
+    @apply text-[52px] relative text-[#163a34] font-extrabold;
+  }
+
+  h1 span {
+    @apply relative inline-block;
+  }
+
+  #highlight {
+    @apply absolute h-[23px] w-0 bg-[#fe9f6b] left-0 bottom-[13px] opacity-40 rounded-[4px] z-0 transition-all duration-[2000ms] ease-in-out;
+  }
+
+  p {
+    @apply text-[#395852] text-[20px] mt-[32px] leading-[150%] tracking-[-0.4px];
+  }
+  .hero button {
+    @apply px-[32px] py-[16px] text-[20px] font-semibold tracking-[-0.5px] rounded-[10px] bg-[#163a34] text-white mt-[32px] mb-[40px] border-0;
+  }
+
+  .hero img {
+    @apply w-full rounded-[3.45px] border-[7px] border-white h-fit;
+  }
+
+  #br2 {
+    @apply hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+  #br1,
+  #br2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+    padding-bottom: 96px;
+  }
+  .hero h1 {
+    text-align: center;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  #br2 {
+    display: block;
+  }
+}
