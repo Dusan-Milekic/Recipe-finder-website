@@ -1,0 +1,84 @@
+.we-exists-section ul li:hover {
+  transform: none;
+}
+.we-exists-section * {
+  margin: 0;
+  padding: 0;
+}
+
+.we-exists-section {
+  margin: 96px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  max-width: 343px;
+}
+
+.we-exists-section h1 {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #163a34;
+}
+.points h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #163a34;
+}
+.points {
+  list-style: none; /* uklanja standardni bullet */
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.points li {
+  position: relative;
+  padding-left: 55px; /* prostor za ikonicu */
+}
+
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  top: 0; /* ovde kontrolišeš vertikalni pomak */
+  width: 32px;
+  height: 32px;
+  background-image: url("images/icon-bullet-point.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box {
+  position: relative;
+}
+.we-exists-section ul li {
+  margin-bottom: 24px;
+  width: 343px;
+}
+
+@media only screen and (min-width: 768px) {
+  .we-exists-section {
+    max-width: 768px;
+  }
+
+  .we-exists-section ul li {
+    width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .we-exists-section {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 130px;
+  }
+  .we-exists-section .heading h1 {
+    width: 350px;
+  }
+  .we-exists-section .points {
+    margin: 0;
+  }
+}
