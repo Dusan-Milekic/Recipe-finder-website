@@ -83,11 +83,15 @@ header {
 .menu-box li {
   list-style: none;
   padding: 12px 8px;
+  transition: transform 0.2s ease;
 }
 li a {
   color: #163a34;
   font-size: 18px;
   letter-spacing: -0.3px;
+}
+li:hover {
+  transform: scale(1.02);
 }
 
 @media only screen and (min-width: 768px) {

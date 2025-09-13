@@ -4,9 +4,9 @@ export default function Footer() {
     <>
       <div className="flex">
         <div className="social">
-          <img src="src/assets/images/icon-instagram.svg" alt="instagram" />
-          <img src="src/assets/images/icon-bluesky.svg" alt="bluesky" />
-          <img src="src/assets/images/icon-tiktok.svg" alt="titkok" />
+          <img src="images/icon-instagram.svg" alt="instagram" />
+          <img src="images/icon-bluesky.svg" alt="bluesky" />
+          <img src="images/icon-tiktok.svg" alt="titkok" />
         </div>
         <div className="text">
           <p>Made with ❤️ and 🥑</p>

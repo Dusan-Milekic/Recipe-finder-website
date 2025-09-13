@@ -6,12 +6,10 @@ import FeatureSection from "./FeaturesSection";
 import RealLifeSection from "./RealLifeSection";
 import CallToAction from "./CallToAction";
 import Footer from "./Footer";
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+function HomePage() {
   return (
     <>
-      <div className="wrapper">
-        <Header />
-      </div>
       <main>
         <HeroSection />
         <FeatureSection />
@@ -22,6 +20,26 @@ function App() {
       <footer>
         <Footer />
       </footer>
+    </>
+  );
+}
+function AboutPage() {
+  return <h1>About Page</h1>;
+}
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <div className="wrapper">
+          <Header />
+        </div>
+
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
