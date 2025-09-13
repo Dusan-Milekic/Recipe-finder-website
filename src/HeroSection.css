@@ -20,8 +20,11 @@
   p {
     @apply text-[#395852] text-[20px] mt-[32px] leading-[150%] tracking-[-0.4px];
   }
+  .container {
+    @apply mx-auto;
+  }
   .hero button {
-    @apply px-[32px] py-[16px] text-[20px] font-semibold tracking-[-0.5px] rounded-[10px] bg-[#163a34] text-white mt-[32px] mb-[40px] border-0;
+    @apply px-[32px] py-[16px] text-[20px] font-semibold tracking-[-0.5px] rounded-[10px] bg-[#163a34] text-white mt-[32px] mb-[40px] rounded-xl border-0;
   }
 
   .hero img {

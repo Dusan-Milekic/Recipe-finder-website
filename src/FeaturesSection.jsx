@@ -4,7 +4,7 @@ export default function FeatureSection() {
     <>
       <div className="section-features">
         <h2>What you'll get</h2>
-        <div className="flex">
+        <div className="flex-dusan">
           <div className="feature">
             <div className="img-holder">
               <img src="images/icon-whole-food-recipes.svg" alt="food" />

@@ -1,48 +1,29 @@
-.real-life {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  max-width: 375px;
-  margin: 0 auto;
-  margin-top: 64px;
-  padding-bottom: 86px;
-}
-.text {
-  max-width: 343px;
-}
-.real-life h2 {
-  font-size: 40px;
-  line-height: 120%;
-  letter-spacing: -2px;
-  color: #163a34;
-}
-.real-life p {
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: -0.4px;
-  color: #395852;
-}
-.text b {
-  position: relative;
-}
-.text b::after {
-  position: absolute;
-  height: 12px;
-  background-color: #fe9f6b;
-  width: 100%;
-  content: "";
-  bottom: 0px;
-  opacity: 0.9;
-  border-radius: 3px;
-  z-index: -500;
-  left: 0;
-}
-.real-life .img-holder {
-  width: 100%;
-}
-.real-life .img-holder img {
-  width: 100%;
-  border-radius: 9.78px;
+@tailwind components;
+@layer components {
+  .real-life {
+    @apply relative z-0 my-0 mx-auto mt-16 max-w-[375px] flex flex-col gap-8 pb-[86px];
+  }
+  .text {
+    @apply max-w-[343px];
+  }
+  .real-life h2 {
+    @apply text-[40px] leading-[120%] tracking-[-2px] text-[#163a34];
+  }
+  .real-life p {
+    @apply text-[20px] leading-[150%] tracking-[-0.4px] text-[#395852] mt-5;
+  }
+  .text b {
+    @apply relative;
+  }
+  .text b::after {
+    @apply absolute h-[12px] bg-[#fe9f6b] w-full content-[''] bottom-0 opacity-90 rounded-[3px] -z-50 left-0;
+  }
+  .real-life .img-holder {
+    @apply w-full;
+  }
+  .real-life .img-holder img {
+    @apply w-full rounded-[9.78px];
+  }
 }
 
 @media only screen and (min-width: 768px) {
