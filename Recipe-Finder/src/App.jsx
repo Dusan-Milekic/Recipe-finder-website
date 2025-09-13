@@ -1,11 +1,17 @@
 import "./App.css";
 
 import Header from "./Header";
+import Footer from "./Footer";
+
+//Main page libraries
 import HeroSection from "./HeroSection";
 import FeatureSection from "./FeaturesSection";
 import RealLifeSection from "./RealLifeSection";
 import CallToAction from "./CallToAction";
-import Footer from "./Footer";
+
+// About page libaries
+import MissionSection from "./MissionSection";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function HomePage() {
   return (
@@ -24,7 +30,13 @@ function HomePage() {
   );
 }
 function AboutPage() {
-  return <h1>About Page</h1>;
+  return (
+    <>
+      <main>
+        <MissionSection />
+      </main>
+    </>
+  );
 }
 function App() {
   return (
