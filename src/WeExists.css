@@ -26,7 +26,8 @@
   }
   .points li::before {
     @apply content-[''] absolute left-0 top-0 w-8 h-8 bg-no-repeat bg-contain;
-    background-image: url("images/icon-bullet-point.svg");
+
+    @apply bg-[url('images/icon-bullet-point.svg')];
   }
   .box {
     @apply relative;
@@ -63,7 +64,12 @@
   .we-exists-section {
     flex-direction: row;
     justify-content: center;
-    column-gap: 130px;
+    width: 1440px;
+  }
+  .we-exists-section ul li {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .we-exists-section .heading h1 {
     width: 350px;

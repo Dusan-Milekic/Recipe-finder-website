@@ -40,6 +40,9 @@ export default function WeExists() {
           </li>
         </ul>
         <hr></hr>
+      </div>
+
+      <div className="we-exists-section">
         <div className="heading">
           <h1>Our food philosophy</h1>
         </div>
