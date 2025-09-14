@@ -37,19 +37,6 @@
   }
 }
 
-.points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-
-  top: 0; /* ovde kontrolišeš vertikalni pomak */
-  width: 32px;
-  height: 32px;
-  background-image: url("images/icon-bullet-point.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media only screen and (min-width: 768px) {
   .we-exists-section {
     max-width: 768px;
