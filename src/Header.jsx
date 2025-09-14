@@ -22,7 +22,7 @@ export default function Header() {
         <div className="links">
           <a href="home">Home</a>
           <a href="about">About</a>
-          <a href="#">Recipes</a>
+          <a href="recipes">Recipes</a>
         </div>
         <div className="browse">
           <button>Browse Recipes</button>
@@ -38,7 +38,7 @@ export default function Header() {
             <a href="about">About</a>
           </li>
           <li>
-            <a href="#">Recipes</a>
+            <a href="recipes">Recipes</a>
           </li>
         </ul>
         <button>Browse recipes</button>

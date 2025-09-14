@@ -14,6 +14,10 @@ import MissionSection from "./MissionSection";
 import WeExists from "./WeExists";
 import PlateSection from "./PlateSection";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+//Recipes page libraries
+import HeroRecipes from "./HeroRecipes";
+import Recipes from "./Recipes";
 function HomePage() {
   return (
     <>
@@ -45,6 +49,17 @@ function AboutPage() {
     </>
   );
 }
+
+function RecipesPage() {
+  return (
+    <>
+      <main>
+        <HeroRecipes />
+        <Recipes />
+      </main>
+    </>
+  );
+}
 function App() {
   return (
     <>
@@ -57,6 +72,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/home" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/recipes" element={<RecipesPage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,9 @@
+@tailwind components;
+@layer components {
+  select {
+    @apply border border-stone-400  rounded-lg text-[#163a34] text-lg p-[8px_12px] cursor-pointer;
+  }
+  option {
+    @apply text-lg;
+  }
+}
