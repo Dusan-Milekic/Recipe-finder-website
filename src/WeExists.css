@@ -35,6 +35,13 @@
   .we-exists-section ul li {
     @apply mb-6 w-[343px];
   }
+
+  .ingr li p {
+    @apply px-0;
+  }
+  #a1 {
+    @apply mt-0;
+  }
 }
 
 @media only screen and (min-width: 768px) {

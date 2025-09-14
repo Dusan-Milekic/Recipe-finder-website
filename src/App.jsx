@@ -56,85 +56,6 @@ function AboutPage() {
   );
 }
 
-export function DataFoods() {
-  const recipes = [
-    {
-      name: "Mediterranean Chickpea Salad",
-      desc: "A refreshing, protein-packed salad tossed in a lemon-olive oil dressing.",
-      serv: 20,
-      prep: 10,
-      cook: 0,
-      img: "images/mediterranean-chickpea-salad-large.webp",
-    },
-    {
-      name: "Avocado & Tomato Wholegrain Toast",
-      desc: "Creamy avocado spread over toasted wholegrain bread, topped with juicy tomatoes.",
-      serv: 1,
-      prep: 5,
-      cook: 5,
-      img: "images/avocado-tomato-wholegrain-toast-large.webp",
-    },
-    {
-      name: "One-Pan Lemon Garlic Salmon with A",
-      desc: "A 15-minute weeknight dinner of flaky salmon and tender asparagus.",
-      serv: 2,
-      prep: 5,
-      cook: 12,
-      img: "images/salmon-asparagus-large.webp",
-    },
-    {
-      name: "Quinoa Veggie Power Bowl",
-      desc: "A balanced bowl of fluffy quinoa, roasted veggies and protein-packed beans.",
-      serv: 2,
-      prep: 10,
-      cook: 25,
-      img: "images/quinoa-veggie-bowl-large.webp",
-    },
-    {
-      name: "Sweet Potato Black Bean Tacos",
-      desc: "Smoky roasted sweet potatoes and black beans loaded into warm tortillas.",
-      serv: 3,
-      prep: 10,
-      cook: 15,
-      img: "images/sweet-potato-tacos-large.webp",
-    },
-    {
-      name: "Greek Yogurt Berry Parfait",
-      desc: "Layered creamy yogurt, fresh berries and crunchy oats for a high protein boost.",
-      serv: 1,
-      prep: 5,
-      cook: 0,
-      img: "images/greek-yogurt-large.webp", // Placeholder, zameniti stvarnom
-    },
-    {
-      name: "Lentil & Spinach Soup",
-      desc: "A hearty 30-minute soup rich in plant protein and warming spices.",
-      serv: 4,
-      prep: 10,
-      cook: 30,
-      img: "images/lentil-soup-large.webp",
-    },
-    {
-      name: "Banana Oat Pancakes",
-      desc: "Fluffy oat pancakes sweetened naturally with ripe bananas.",
-      serv: 2,
-      prep: 5,
-      cook: 12,
-      img: "images/banana-pancakes-large.webp", // Placeholder, zameniti stvarnom
-    },
-    {
-      name: "Salmon Asparagus",
-      desc: "Fresh salmon with crispy asparagus and herbs.",
-      serv: 2,
-      prep: 8,
-      cook: 15,
-      img: "images/salmon-asparagus-large.webp",
-    },
-  ];
-
-  return recipes;
-}
-
 function RecipesPage() {
   return (
     <>
@@ -142,6 +63,9 @@ function RecipesPage() {
         <HeroRecipes />
         <Recipes className="pt-12 " />;
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
@@ -150,8 +74,11 @@ function DetailFoodPage() {
   return (
     <>
       <main>
-        <HeroRecipes />
+        <DetailFood />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

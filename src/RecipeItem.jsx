@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import "./RecipeItem.css";
-export default function RecipeItem({ name, desc, serv, prep, cook, img }) {
+export default function RecipeItem({
+  name,
+  desc,
+  serv,
+  prep,
+  cook,
+  img,
+  slug,
+}) {
   return (
     <>
       <div className="recipe-item bg-white rounded-xl p-2">
@@ -31,7 +39,7 @@ export default function RecipeItem({ name, desc, serv, prep, cook, img }) {
         </div>
         <Link
           className="bg-[#163a34] text-white py-2 px-4 block w-full text-center rounded-3xl "
-          to={`/detail?name=${encodeURIComponent(name)}`}
+          to={`/detail?slug=${encodeURIComponent(slug)}`}
         >
           Browse Recipes
         </Link>

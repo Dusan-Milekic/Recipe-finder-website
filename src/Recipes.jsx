@@ -19,8 +19,8 @@ export default function Recipes() {
       .trim()
       .toLowerCase();
     return recipes
-      .filter((r) => (text ? r.name.toLowerCase().startsWith(text) : true))
-      .map((r) => <RecipeItem key={r.name} className="pt-12" {...r} />);
+      .filter((r) => (text ? r.title.toLowerCase().startsWith(text) : true))
+      .map((r) => <RecipeItem slug={r.title} className="pt-12" {...r} />);
   }
   return (
     <>
@@ -81,26 +81,26 @@ export default function Recipes() {
           .filter((d) => {
             const text = q.trim().toLowerCase();
             const matchesSearch = text
-              ? d.name.toLowerCase().includes(text) ||
-                d.desc.toLowerCase().includes(text)
+              ? d.title.toLowerCase().includes(text) ||
+                d.overview.toLowerCase().includes(text)
               : true;
 
-            const okPrep = prepNum != null ? d.prep <= prepNum : true;
-            const okCook = cookNum != null ? d.cook <= cookNum : true;
+            const okPrep = prepNum != null ? d.prepMinutes <= prepNum : true;
+            const okCook = cookNum != null ? d.cookMinutes <= cookNum : true;
 
             return matchesSearch && okPrep && okCook;
           })
-          .sort((a, b) => a.cook - b.cook) // rastuće po cook
+          .sort((a, b) => a.cookMinutes - b.cookMinutes) // rastuće po cook
           .map((r) => (
             <RecipeItem
-              key={r.name}
+              slug={r.slug}
               className="pt-12"
-              name={r.name}
-              desc={r.desc}
-              serv={r.serv}
-              prep={r.prep}
-              cook={r.cook}
-              img={r.img}
+              name={r.title}
+              desc={r.overview}
+              serv={r.servings}
+              prep={r.prepMinutes}
+              cook={r.cookMinutes}
+              img={r.image.large}
             />
           ))}
       </div>
