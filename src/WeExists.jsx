@@ -9,6 +9,7 @@ export default function WeExists() {
         </div>
         <ul className="points">
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Cut throught the noise.</h3>
               <p>
@@ -20,6 +21,7 @@ export default function WeExists() {
             </div>
           </li>
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Empower home kitchens.</h3>
               <p>
@@ -30,6 +32,7 @@ export default function WeExists() {
             </div>
           </li>
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Make healthy look good.</h3>
               <p>
@@ -48,6 +51,7 @@ export default function WeExists() {
         </div>
         <ul className="points">
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Whole ingredients first.</h3>
               <p>
@@ -57,6 +61,7 @@ export default function WeExists() {
             </div>
           </li>
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Flavor without compromise.</h3>
               <p>
@@ -66,6 +71,7 @@ export default function WeExists() {
             </div>
           </li>
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Respect for time.</h3>
               <p>
@@ -75,6 +81,7 @@ export default function WeExists() {
             </div>
           </li>
           <li>
+            <img src="images/icon-bullet-point.svg" alt="bullet" />
             <div className="box">
               <h3>Sustainable choices.</h3>
               <p>

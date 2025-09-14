@@ -24,7 +24,7 @@
   .points li p {
     @apply text-[18px] text-[#395852] leading-[150%] tracking-[-0.4px];
   }
-  .points li::before {
+  .points li img {
     @apply content-[''] absolute left-0 top-0 w-8 h-8 bg-no-repeat bg-contain;
 
     @apply bg-[url('/images/icon-bullet-point.svg')];
