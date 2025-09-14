@@ -39,6 +39,49 @@ export default function WeExists() {
             </div>
           </li>
         </ul>
+        <hr></hr>
+        <div className="heading">
+          <h1>Our food philosophy</h1>
+        </div>
+        <ul className="points">
+          <li>
+            <div className="box">
+              <h3>Whole ingredients first.</h3>
+              <p>
+                Fresh produce, grains, legumes, herbs, and quality fats form the
+                backbone of every recipe.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="box">
+              <h3>Flavor without compromise.</h3>
+              <p>
+                Spices, citrus, and natural sweetness replace excess salt,
+                sugar, and additives.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="box">
+              <h3>Respect for time.</h3>
+              <p>
+                Weeknight meals should slot into real schedules; weekend cooking
+                can be leisurely but never wasteful.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="box">
+              <h3>Sustainable choices.</h3>
+              <p>
+                Short ingredient lists cut down on food waste and carbon
+                footprint, while plant-forward dishes keep things
+                planet-friendly.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </>
   );

@@ -12,7 +12,7 @@ import CallToAction from "./CallToAction";
 // About page libaries
 import MissionSection from "./MissionSection";
 import WeExists from "./WeExists";
-
+import PlateSection from "./PlateSection";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function HomePage() {
   return (
@@ -36,7 +36,12 @@ function AboutPage() {
       <main>
         <MissionSection />
         <WeExists />
+        <PlateSection />
+        <CallToAction />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

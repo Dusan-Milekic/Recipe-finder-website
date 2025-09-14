@@ -2,7 +2,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <>
-      <div className="flex">
+      <div className="flex-dusan">
         <div className="social">
           <img src="images/icon-instagram.svg" alt="instagram" />
           <img src="images/icon-bluesky.svg" alt="bluesky" />

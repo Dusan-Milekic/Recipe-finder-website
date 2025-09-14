@@ -1,46 +1,38 @@
-.mission-section * {
-  margin: 0;
-  padding: 0;
-}
-
-.mission-section {
-  width: fit-content;
-  padding: 48px 0px;
-  margin: 0 auto;
-}
-.heading {
-  width: fit-content;
-}
-#p1 {
-  font-size: 20px;
-  color: #163a34;
-  font-weight: bold;
-  background-color: #fe9f6b;
-  width: fit-content;
-  padding: 2px 8px;
-  border-radius: 8px;
-}
-.mission-section .text:first-child {
-  color: red;
-}
-
-.mission-section .text h1 {
-  margin: 24px 0px;
-  color: #163a34;
-  font-size: 40px;
-  font-weight: 900;
-}
-.mission-section .text p:last-child {
-  margin-top: 16px;
-}
-.mission-section .image-holder {
-  display: flex;
-  margin-top: 40px;
-  max-width: 343px;
-}
-.image-holder img {
-  width: 100%;
-  border-radius: 15px;
+@tailwind components;
+@layer components {
+  .mission-section * {
+    @apply m-0 p-0;
+  }
+  .mission-section {
+    @apply w-fit p-[48px_0px] m-0 mx-auto;
+  }
+  .heading {
+    @apply w-fit;
+  }
+  #p1 {
+    @apply text-[20px] text-[#163a34] font-bold bg-[#fe9f6b] w-fit p-[2px_8px] rounded-[8px];
+  }
+  .mission-section .text:first-child {
+    @apply text-[#395852];
+  }
+  .mission-section .text h1 {
+    @apply my-[24px] text-[#163a34] text-[40px] font-extrabold;
+  }
+  .mission-section .text p:last-child {
+    @apply mt-[16px];
+  }
+  .mission-section .image-holder {
+    @apply flex mt-[40px] max-w-[343px];
+  }
+  .image-holder img {
+    @apply w-full rounded-[15px];
+  }
+  .mission-section ul {
+    @apply list-disc ml-4;
+  }
+  .mission-section ul li:hover {
+    @apply transform-none;
+  }
 }
 
 @media only screen and (min-width: 768px) {

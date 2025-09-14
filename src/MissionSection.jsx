@@ -19,10 +19,7 @@ export default function MissionSection() {
           </p>
         </div>
         <div className="image-holder">
-          <img
-            src="../public/images/image-about-our-mission-large.webp"
-            alt="mission"
-          />
+          <img src="images/image-about-our-mission-large.webp" alt="mission" />
         </div>
       </div>
     </>

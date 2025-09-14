@@ -1,41 +1,39 @@
-.we-exists-section ul li:hover {
-  transform: none;
-}
-.we-exists-section * {
-  margin: 0;
-  padding: 0;
-}
-
-.we-exists-section {
-  margin: 96px auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-  justify-content: center;
-  max-width: 343px;
-}
-
-.we-exists-section h1 {
-  font-size: 40px;
-  line-height: 120%;
-  font-weight: 900;
-  letter-spacing: -2px;
-  color: #163a34;
-}
-.points h3 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #163a34;
-}
-.points {
-  list-style: none; /* uklanja standardni bullet */
-  padding-left: 0;
-  margin: 0 auto;
-}
-
-.points li {
-  position: relative;
-  padding-left: 55px; /* prostor za ikonicu */
+@tailwind components;
+@layer components {
+  .we-exists-section ul li:hover {
+    @apply transform-none;
+  }
+  .we-exists-section * {
+    @apply m-0 p-0;
+  }
+  .we-exists-section {
+    @apply my-[96px] mx-auto flex flex-col gap-[40px] justify-center max-w-[343px];
+  }
+  .we-exists-section h1 {
+    @apply text-[40px] leading-[120%] font-extrabold tracking-[-2px] text-[#163a34];
+  }
+  .points {
+    @apply list-none pl-0 mx-auto;
+  }
+  .points li {
+    @apply relative pl-14;
+  }
+  .points h3 {
+    @apply text-[24px] font-bold text-[#163a34];
+  }
+  .points li p {
+    @apply text-[18px] text-[#395852] leading-[150%] tracking-[-0.4px];
+  }
+  .points li::before {
+    @apply content-[''] absolute left-0 top-0 w-8 h-8 bg-no-repeat bg-contain;
+    background-image: url("/images/icon-bullet-point.svg");
+  }
+  .box {
+    @apply relative;
+  }
+  .we-exists-section ul li {
+    @apply mb-6 w-[343px];
+  }
 }
 
 .points li::before {
@@ -49,14 +47,6 @@
   background-image: url("images/icon-bullet-point.svg");
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.box {
-  position: relative;
-}
-.we-exists-section ul li {
-  margin-bottom: 24px;
-  width: 343px;
 }
 
 @media only screen and (min-width: 768px) {
