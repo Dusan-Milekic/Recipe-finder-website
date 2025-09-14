@@ -19,7 +19,16 @@
     @apply w-fit;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .tool-bar {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .tool-bar .search-box {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .tool-bar {
     width: 768px;

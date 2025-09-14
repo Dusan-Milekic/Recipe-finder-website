@@ -1,60 +1,6 @@
-import "./App.css";
-
-import Header from "./Header";
-import Footer from "./Footer";
-
-//Main page libraries
-import HeroSection from "./HeroSection";
-import FeatureSection from "./FeaturesSection";
-import RealLifeSection from "./RealLifeSection";
-import CallToAction from "./CallToAction";
-
-// About page libaries
-import MissionSection from "./MissionSection";
-import WeExists from "./WeExists";
-import PlateSection from "./PlateSection";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-//Recipes page libraries
-import HeroRecipes from "./HeroRecipes";
-import Recipes from "./Recipes";
-import RecipeItem from "./RecipeItem";
-import { useState } from "react";
-
-function HomePage() {
-  return (
-    <>
-      <main>
-        <HeroSection />
-        <FeatureSection />
-        <RealLifeSection />
-
-        <CallToAction />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
-  );
-}
-function AboutPage() {
-  return (
-    <>
-      <main>
-        <MissionSection />
-        <WeExists />
-        <PlateSection />
-        <CallToAction />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
-  );
-}
-
+// src/recipesData.js
 export function DataFoods() {
-  const recipes = [
+  return [
     {
       name: "Mediterranean Chickpea Salad",
       desc: "A refreshing, protein-packed salad tossed in a lemon-olive oil dressing.",
@@ -101,7 +47,7 @@ export function DataFoods() {
       serv: 1,
       prep: 5,
       cook: 0,
-      img: "images/greek-yogurt-large.webp", // Placeholder, zameniti stvarnom
+      img: "images/greek-yogurt-large.webp",
     },
     {
       name: "Lentil & Spinach Soup",
@@ -117,7 +63,7 @@ export function DataFoods() {
       serv: 2,
       prep: 5,
       cook: 12,
-      img: "images/banana-pancakes-large.webp", // Placeholder, zameniti stvarnom
+      img: "images/banana-pancakes-large.webp",
     },
     {
       name: "Salmon Asparagus",
@@ -128,37 +74,4 @@ export function DataFoods() {
       img: "images/salmon-asparagus-large.webp",
     },
   ];
-
-  return recipes;
 }
-
-function RecipesPage() {
-  return (
-    <>
-      <main>
-        <HeroRecipes />
-        <Recipes className="pt-12 " />;
-      </main>
-    </>
-  );
-}
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <div className="wrapper">
-          <Header />
-        </div>
-
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/home" element={<HomePage />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
-          <Route path="/recipes" element={<RecipesPage />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
-}
-
-export default App;
