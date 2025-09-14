@@ -1,9 +1,35 @@
 @tailwind components;
 @layer components {
   select {
-    @apply border border-stone-400  rounded-lg text-[#163a34] text-lg p-[8px_12px] cursor-pointer;
+    @apply border border-stone-300 bg-white rounded-lg text-[#163a34] text-lg p-[8px_12px] cursor-pointer;
   }
   option {
     @apply text-lg;
+  }
+  input:focus {
+    @apply border-none outline-none;
+  }
+  .search-box:hover {
+    @apply border-2;
+  }
+  .tool-bar {
+    @apply flex-row m-0  justify-between w-full;
+  }
+  .tool-bar .search-box {
+    @apply w-fit;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tool-bar {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .tool-bar {
+    width: 1440px;
+    margin: 0 auto;
   }
 }
