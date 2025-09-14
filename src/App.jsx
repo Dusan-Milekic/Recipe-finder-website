@@ -78,6 +78,54 @@ function DataFoods() {
       cook: 12,
       img: "images/salmon-asparagus-large.webp",
     },
+    {
+      name: "Quinoa Veggie Power Bowl",
+      desc: "A balanced bowl of fluffy quinoa, roasted veggies and protein-packed beans.",
+      serv: 2,
+      prep: 10,
+      cook: 25,
+      img: "images/quinoa-veggie-bowl-large.webp",
+    },
+    {
+      name: "Sweet Potato Black Bean Tacos",
+      desc: "Smoky roasted sweet potatoes and black beans loaded into warm tortillas.",
+      serv: 3,
+      prep: 10,
+      cook: 15,
+      img: "images/sweet-potato-tacos-large.webp",
+    },
+    {
+      name: "Greek Yogurt Berry Parfait",
+      desc: "Layered creamy yogurt, fresh berries and crunchy oats for a high protein boost.",
+      serv: 1,
+      prep: 5,
+      cook: 0,
+      img: "images/greek-yogurt-large.webp", // Placeholder, zameniti stvarnom
+    },
+    {
+      name: "Lentil & Spinach Soup",
+      desc: "A hearty 30-minute soup rich in plant protein and warming spices.",
+      serv: 4,
+      prep: 10,
+      cook: 30,
+      img: "images/lentil-soup-large.webp",
+    },
+    {
+      name: "Banana Oat Pancakes",
+      desc: "Fluffy oat pancakes sweetened naturally with ripe bananas.",
+      serv: 2,
+      prep: 5,
+      cook: 12,
+      img: "images/banana-pancakes-large.webp", // Placeholder, zameniti stvarnom
+    },
+    {
+      name: "Salmon Asparagus",
+      desc: "Fresh salmon with crispy asparagus and herbs.",
+      serv: 2,
+      prep: 8,
+      cook: 15,
+      img: "images/salmon-asparagus-large.webp",
+    },
   ];
 
   return recipes;
@@ -104,11 +152,16 @@ function RecipesPage() {
     <>
       <main>
         <HeroRecipes />
-        <Recipes />
-        <div className="foods-container grid grid-cols-1 gap-8 mx-auto w-[375px]">
+        <Recipes className="pt-12 " />
+        <div className="foods-container grid grid-cols-1 gap-8 mx-auto w-[375px] pb-24">
           {LoadFood(RecipesData[0])}
           {LoadFood(RecipesData[1])}
           {LoadFood(RecipesData[2])}
+          {LoadFood(RecipesData[3])}
+          {LoadFood(RecipesData[4])}
+          {LoadFood(RecipesData[5])}
+          {LoadFood(RecipesData[6])}
+          {LoadFood(RecipesData[7])}
         </div>
       </main>
     </>

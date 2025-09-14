@@ -4,7 +4,7 @@ export default function RecipeItem({ name, desc, serv, prep, cook, img }) {
     <>
       <div className="recipe-item bg-white rounded-xl p-2">
         <img src={img} alt="food" className="rounded-xl" />
-        <h3 className="text-xl">{name}</h3>
+        <h3 className="text-xl py-2">{name}</h3>
         <p className="text-base">{desc}</p>
         <div className="info flex flex-wrap gap-x-4 gap-y-1">
           <div className="servings flex w-fit">
