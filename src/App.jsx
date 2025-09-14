@@ -21,6 +21,9 @@ import Recipes from "./Recipes";
 import RecipeItem from "./RecipeItem";
 import { useState } from "react";
 
+//Details food page libarraies
+import DetailFood from "./DetailFood";
+
 function HomePage() {
   return (
     <>
@@ -142,6 +145,17 @@ function RecipesPage() {
     </>
   );
 }
+
+function DetailFoodPage() {
+  return (
+    <>
+      <main>
+        <HeroRecipes />
+      </main>
+    </>
+  );
+}
+
 function App() {
   return (
     <>
@@ -155,6 +169,7 @@ function App() {
           <Route path="/home" element={<HomePage />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/recipes" element={<RecipesPage />}></Route>
+          <Route path="/detail" element={<DetailFoodPage />}></Route>
         </Routes>
       </BrowserRouter>
     </>
